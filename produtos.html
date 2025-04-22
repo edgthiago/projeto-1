@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Configurações básicas da página de produtos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Produtos de qualidade premium para pets - Alimentos, acessórios e brinquedos selecionados"
+    />
+    <title>Produtos - PetShop Amigo Fiel</title>
+    <!-- Bootstrap CSS - Framework para layout responsivo -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome - Biblioteca de ícones vetoriais -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Barra de navegação -->
+    <!-- Menu responsivo com links para todas as seções do site -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top"
+        aria-label="Navegação principal"
+      >
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <i class="fas fa-paw me-2" aria-hidden="true"></i>
+            <span class="d-none d-sm-inline">PetShop Amigo Fiel</span>
+            <span class="d-inline d-sm-none">Amigo Fiel</span>
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Alternar navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="fas fa-home me-1" aria-hidden="true"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicos.html">
+                  <i class="fas fa-cut me-1" aria-hidden="true"></i>
+                  <span>Serviços</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="produtos.html"
+                  aria-current="page"
+                >
+                  <i class="fas fa-shopping-bag me-1" aria-hidden="true"></i>
+                  <span>Produtos</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="adocao.html">
+                  <i class="fas fa-heart me-1" aria-hidden="true"></i>
+                  <span>Adoção</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="min-vh-100 pt-5">
+      <!-- Seção Hero - Banner principal animado com mensagem de boas-vindas -->
+      <!-- A classe 'bg-primary' define a cor de fundo desta seção -->
+      <section class="py-5 bg-primary text-white" aria-labelledby="hero-title">
+        <div class="container pt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start hero-text">
+              <h1 id="hero-title" class="display-4 fw-bold mb-4 animate-title">
+                Os <span class="highlight-text">melhores produtos</span> para
+                seu pet
+              </h1>
+              <p class="lead animate-text">
+                Selecionamos
+                <span class="fw-bold">produtos de qualidade</span> para o
+                conforto, nutrição e diversão do seu melhor amigo.
+              </p>
+              <div
+                class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start animate-buttons"
+              >
+                <a
+                  href="#promocoes"
+                  class="btn btn-light btn-lg w-100 w-sm-auto"
+                  >Ofertas Especiais</a
+                >
+                <a
+                  href="#catalogo"
+                  class="btn btn-outline-light btn-lg w-100 w-sm-auto"
+                  >Ver Catálogo</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <div
+                id="heroCarousel"
+                class="carousel slide carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner rounded-3 shadow">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                    <img
+                      src="img/1RAOPR_1.JPG"
+                      class="d-block w-100"
+                      alt="Ração premium para cães e gatos de alta qualidade nutricional"
+                      width="800"
+                      height="500"
+                      loading="eager"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h2 class="h5 fw-bold mb-0">Ração Premium</h2>
+                      <p class="fs-5 fw-bold text-warning">30% de desconto!</p>
+                      <p class="small d-none d-sm-block fst-italic">
+                        Oferta por tempo limitado
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img
+                      src="img/3BRINQ_1.JPG"
+                      class="d-block w-100"
+                      alt="Diversos brinquedos coloridos e seguros para cães e gatos"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h2 class="h5 fw-bold mb-0">Kit Brinquedos</h2>
+                      <p class="fs-5 fw-bold text-warning">25% de desconto!</p>
+                      <p class="small d-none d-sm-block fst-italic">
+                        Na compra do kit completo
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img
+                      src="img/5CAMAC_1.JPG"
+                      class="d-block w-100"
+                      alt="Camas confortáveis e aconchegantes para pets de todos os tamanhos"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h2 class="h5 fw-bold mb-0">Camas para Pet</h2>
+                      <p class="fs-5 fw-bold text-warning">20% de desconto!</p>
+                      <p class="small d-none d-sm-block fst-italic">
+                        Em todas as camas
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Catálogo de produtos -->
+      <section class="py-5" id="catalogo">
+        <div class="container">
+          <h2 class="text-center mb-5">Catálogo</h2>
+
+          <!-- Grid de produtos - Linha 1 -->
+          <div class="row g-4 mb-4">
+            <!-- Produto 1 -->
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="img/1RAOPR_1.JPG"
+                  class="card-img-top"
+                  alt="Ração Premium para Cães"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h3 class="h5 card-title">Ração Premium Cães</h3>
+                  <p class="card-text flex-grow-1">
+                    Ração premium de alta qualidade, com nutrientes balanceados
+                    para manter seu cão saudável e com pelagem brilhante.
+                  </p>
+                  <div class="mt-auto">
+                    <p class="text-primary fs-5 fw-bold mb-3">R$ 89,90</p>
+                    <a href="#" class="btn btn-primary w-100">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="img/2RAOPR_1.JPG"
+                  class="card-img-top"
+                  alt="Ração Premium para Gatos"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h3 class="h5 card-title">Ração Premium Gatos</h3>
+                  <p class="card-text flex-grow-1">
+                    Formulada especialmente para gatos, com ingredientes que
+                    ajudam a controlar bolas de pelo e saúde urinária.
+                  </p>
+                  <div class="mt-auto">
+                    <p class="text-primary fs-5 fw-bold mb-3">R$ 79,90</p>
+                    <a href="#" class="btn btn-primary w-100">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="img/3BRINQ_1.JPG"
+                  class="card-img-top"
+                  alt="Brinquedo para Cães"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h3 class="h5 card-title">Brinquedo Interativo</h3>
+                  <p class="card-text flex-grow-1">
+                    Brinquedo resistente e interativo para cães. Ajuda a reduzir
+                    a ansiedade e estimular o desenvolvimento cognitivo.
+                  </p>
+                  <div class="mt-auto">
+                    <p class="text-primary fs-5 fw-bold mb-3">R$ 45,90</p>
+                    <a href="#" class="btn btn-primary w-100">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid de produtos - Linha 2 -->
+          <div class="row g-4 mb-4">
+            <!-- Produto 4 -->
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="img/4VARIN_1.JPG"
+                  class="card-img-top"
+                  alt="Brinquedo para Gatos"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h3 class="h5 card-title">Varinha para Gatos</h3>
+                  <p class="card-text flex-grow-1">
+                    Varinha interativa com penas que estimula o instinto de caça
+                    dos felinos. Diversão garantida para seu gato.
+                  </p>
+                  <div class="mt-auto">
+                    <p class="text-primary fs-5 fw-bold mb-3">R$ 29,90</p>
+                    <a href="#" class="btn btn-primary w-100">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="img/5CAMAC_1.JPG"
+                  class="card-img-top"
+                  alt="Cama para Pets"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h3 class="h5 card-title">Cama Conforto Premium</h3>
+                  <p class="card-text flex-grow-1">
+                    Cama macia e aconchegante, com tecido antialérgico e base
+                    antiderrapante. Ideal para um sono tranquilo.
+                  </p>
+                  <div class="mt-auto">
+                    <p class="text-primary fs-5 fw-bold mb-3">R$ 129,90</p>
+                    <a href="#" class="btn btn-primary w-100">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produto 6 -->
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="img/6COLEI_1.JPG"
+                  class="card-img-top"
+                  alt="Coleira para Pets"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h3 class="h5 card-title">Coleira Ajustável</h3>
+                  <p class="card-text flex-grow-1">
+                    Coleira resistente, leve e ajustável com fecho de segurança.
+                    Disponível em várias cores e tamanhos.
+                  </p>
+                  <div class="mt-auto">
+                    <p class="text-primary fs-5 fw-bold mb-3">R$ 39,90</p>
+                    <a href="#" class="btn btn-primary w-100">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid de produtos - Linha 3 -->
+          <div class="row g-4 mb-4">
+            <!-- Produto 7 -->
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="img/7SHAMP_1.JPG"
+                  class="card-img-top"
+                  alt="Shampoo para Pets"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h3 class="h5 card-title">Shampoo Hipoalergênico</h3>
+                  <p class="card-text flex-grow-1">
+                    Shampoo neutro e suave, ideal para pets com pele sensível.
+                    Limpa profundamente sem ressecar.
+                  </p>
+                  <div class="mt-auto">
+                    <p class="text-primary fs-5 fw-bold mb-3">R$ 34,90</p>
+                    <a href="#" class="btn btn-primary w-100">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produto 8 -->
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="img/8PETIS_1.JPG"
+                  class="card-img-top"
+                  alt="Petiscos para Cães"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h3 class="h5 card-title">Petiscos Naturais</h3>
+                  <p class="card-text flex-grow-1">
+                    Petiscos mastigáveis 100% naturais, ajudam na higiene bucal
+                    e são perfeitos para o adestramento.
+                  </p>
+                  <div class="mt-auto">
+                    <p class="text-primary fs-5 fw-bold mb-3">R$ 25,90</p>
+                    <a href="#" class="btn btn-primary w-100">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produto 9 -->
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="img/9ARRAN_1.JPG"
+                  class="card-img-top"
+                  alt="Arranhador para Gatos"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h3 class="h5 card-title">Arranhador Torre</h3>
+                  <p class="card-text flex-grow-1">
+                    Arranhador com vários níveis, plataformas e brinquedos.
+                    Ideal para gatos ativos que gostam de escalar.
+                  </p>
+                  <div class="mt-auto">
+                    <p class="text-primary fs-5 fw-bold mb-3">R$ 189,90</p>
+                    <a href="#" class="btn btn-primary w-100">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid de produtos - Linha 4 -->
+          <div class="row g-4">
+            <!-- Produto 10 -->
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="img/10ESCO_1.JPG"
+                  class="card-img-top"
+                  alt="Escova para Pets"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h3 class="h5 card-title">Escova Desembaraçadora</h3>
+                  <p class="card-text flex-grow-1">
+                    Escova profissional para remoção de pelos mortos e
+                    desembaraçamento. Ideal para pets de pelos longos.
+                  </p>
+                  <div class="mt-auto">
+                    <p class="text-primary fs-5 fw-bold mb-3">R$ 49,90</p>
+                    <a href="#" class="btn btn-primary w-100">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produto 11 -->
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="img/11COME_1.JPG"
+                  class="card-img-top"
+                  alt="Comedouro para Pets"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h3 class="h5 card-title">Comedouro Automático</h3>
+                  <p class="card-text flex-grow-1">
+                    Comedouro automático com timer programável. Garante
+                    alimentação nos horários certos mesmo na sua ausência.
+                  </p>
+                  <div class="mt-auto">
+                    <p class="text-primary fs-5 fw-bold mb-3">R$ 159,90</p>
+                    <a href="#" class="btn btn-primary w-100">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produto 12 -->
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="img/12CASI_1.JPG"
+                  class="card-img-top"
+                  alt="Casinha para Pets"
+                />
+                <div class="card-body text-center d-flex flex-column">
+                  <h3 class="h5 card-title">Casinha Térmica</h3>
+                  <p class="card-text flex-grow-1">
+                    Casinha durável com isolamento térmico, mantém temperatura
+                    agradável em dias quentes ou frios.
+                  </p>
+                  <div class="mt-auto">
+                    <p class="text-primary fs-5 fw-bold mb-3">R$ 219,90</p>
+                    <a href="#" class="btn btn-primary w-100">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Página de produto individual (exemplo) -->
+      <section class="py-5 d-none" id="produto-detalhe">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img
+                src="img/produtos/racao-premium.jpg"
+                class="img-fluid rounded-3"
+                alt="Imagem do produto"
+              />
+            </div>
+            <div class="col-lg-6">
+              <div class="container-white">
+                <h2>Product Description</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus eget felis ac nisl interdum finibus. Fusce malesuada
+                  lacinia quam, eget tempor velit varius in.
+                </p>
+                <a href="#" class="btn btn-primary">CTA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Botão voltar ao topo -->
+    <a href="#" class="back-to-top" aria-label="Voltar ao topo da página">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Rodapé da página -->
+    <!-- Informações de contato e links úteis -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-section">
+              <h4 class="footer-title">
+                <i class="fas fa-paw me-2"></i>
+                <span>PetShop Amigo Fiel</span>
+              </h4>
+              <p class="mb-4">
+                Cuidando do seu melhor amigo com amor e dedicação desde 2025.
+              </p>
+              <div class="social-links">
+                <a href="#" class="social-link facebook" aria-label="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link instagram"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link x-twitter" aria-label="Twitter">
+                  <i class="fab fa-x"></i>
+                </a>
+                <a href="#" class="social-link whatsapp" aria-label="WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="footer-section">
+              <h5 class="footer-title">Links Rápidos</h5>
+              <ul class="footer-links">
+                <li>
+                  <a href="index.html">
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="servicos.html">
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Serviços</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="produtos.html">
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Produtos</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="adocao.html">
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Adoção</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="footer-section">
+              <h5 class="footer-title">Parceiros</h5>
+              <ul class="footer-partners">
+                <li>
+                  <a
+                    href="https://www.petz.com.br"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fas fa-store"></i>
+                    <span>Petz</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.cobasi.com.br"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fas fa-store"></i>
+                    <span>Cobasi</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.petlove.com.br"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fas fa-store"></i>
+                    <span>Petlove</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-section">
+              <h5 class="footer-title">Contato</h5>
+              <address class="footer-contact">
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Rua dos Pets, 123<br />São Paulo - SP</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+551199999999">(11) 99999-9999</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:contato@amigofiel.com.br"
+                      >contato@amigofiel.com.br</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-clock"></i>
+                    <span>Seg - Sáb: 9h às 19h</span>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="text-center mb-0">
+            &copy; 2025 PetShop Amigo Fiel. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts necessários -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para o botão de voltar ao topo -->
+    <script>
+      // Função para controlar o botão de voltar ao topo
+      document.addEventListener("DOMContentLoaded", function () {
+        const backToTopButton = document.querySelector(".back-to-top");
+
+        // Mostrar ou esconder o botão baseado na posição da página
+        function toggleBackToTopButton() {
+          if (window.scrollY > 300) {
+            backToTopButton.classList.add("show");
+          } else {
+            backToTopButton.classList.remove("show");
+          }
+        }
+
+        // Evento de scroll para mostrar/esconder o botão
+        window.addEventListener("scroll", toggleBackToTopButton);
+
+        // Evento de clique para rolar ao topo
+        backToTopButton.addEventListener("click", function (e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+        // Verificar posição inicial
+        toggleBackToTopButton();
+      });
+
+      // Script para filtragem de produtos (existente)
+      document.addEventListener("DOMContentLoaded", function () {
+        // Botões de filtro
+        const filterButtons = document.querySelectorAll(".btn-filter");
+        // Cards de produtos
+        const productItems = document.querySelectorAll(".product-item");
+
+        // Adicionar event listener para cada botão de filtro
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // Remover classe "active" de todos os botões
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            // Adicionar classe "active" ao botão clicado
+            this.classList.add("active");
+
+            // Obter o valor do filtro
+            const filterValue = this.getAttribute("data-filter");
+
+            // Mostrar ou esconder produtos baseado no filtro
+            productItems.forEach((item) => {
+              if (
+                filterValue === "all" ||
+                item.classList.contains(filterValue)
+              ) {
+                item.style.display = "block";
+                // Animar a entrada dos itens filtrados
+                setTimeout(() => {
+                  item.style.opacity = "1";
+                  item.style.transform = "scale(1)";
+                }, 50);
+              } else {
+                item.style.opacity = "0";
+                item.style.transform = "scale(0.8)";
+                setTimeout(() => {
+                  item.style.display = "none";
+                }, 300);
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

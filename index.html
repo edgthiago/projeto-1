@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PetShop Amigo Fiel - Seu pet merece o melhor em cuidados, produtos e serviços personalizados"
+    />
+    <meta name="theme-color" content="#7952b3" />
+    <title>PetShop Amigo Fiel - Amor e Dedicação ao seu Pet</title>
+    <!-- Bootstrap CSS - Framework de estilos que facilita a criação de layouts responsivos -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome - Biblioteca de ícones vetoriais -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS personalizado - Arquivo com estilos específicos do site -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  </head>
+
+  <body>
+    <!-- Barra de navegação fixa no topo -->
+    <!-- A classe 'navbar-dark fixed-top' mantém o menu sempre visível no topo da página -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      aria-label="Navegação principal"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center"
+          href="index.html"
+          aria-label="PetShop Amigo Fiel"
+        >
+          <i class="fas fa-paw me-2" aria-hidden="true"></i>
+          <span class="d-none d-sm-inline">PetShop Amigo Fiel</span>
+          <span class="d-inline d-sm-none">Amigo Fiel</span>
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Alternar navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" aria-current="page">
+                <i class="fas fa-home me-1" aria-hidden="true"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicos.html">
+                <i class="fas fa-cut me-1" aria-hidden="true"></i>
+                <span>Serviços</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="produtos.html">
+                <i class="fas fa-shopping-bag me-1" aria-hidden="true"></i>
+                <span>Produtos</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="adocao.html">
+                <i class="fas fa-heart me-1" aria-hidden="true"></i>
+                <span>Adoção</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="min-vh-100 pt-5">
+      <!-- Seção Hero - Banner principal animado com mensagem de boas-vindas -->
+      <!-- A classe 'bg-primary' define a cor de fundo desta seção -->
+      <section class="py-5 bg-primary text-white" aria-labelledby="hero-title">
+        <div class="container pt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start hero-text">
+              <h1 id="hero-title" class="display-4 fw-bold mb-4 animate-title">
+                O <span class="highlight-text">melhor cuidado</span> para seu
+                amigo de patas
+              </h1>
+              <p class="lead animate-text">
+                Experiência premium em serviços pet com
+                <span class="fw-bold">profissionais dedicados</span> e
+                <span class="fw-bold">amor genuíno</span> pelos animais.
+              </p>
+              <div
+                class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start animate-buttons"
+              >
+                <a href="#contato" class="btn btn-light btn-lg w-100 w-sm-auto"
+                  >Agendar Serviço</a
+                >
+                <a
+                  href="produtos.html"
+                  class="btn btn-outline-light btn-lg w-100 w-sm-auto"
+                  >Conhecer Produtos</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+              <div
+                id="heroCarousel"
+                class="carousel slide carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner rounded-3 shadow">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                    <img
+                      src="img/veterinaria.jpg"
+                      class="d-block w-100"
+                      alt="Uma veterinária sorridente examinando um cachorro de pequeno porte em uma clínica moderna e limpa"
+                      width="800"
+                      height="500"
+                      loading="eager"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h2 class="h5 fw-bold">Cuidado Profissional</h2>
+                      <p class="small d-none d-sm-block">
+                        Equipe especializada para cuidar do seu pet
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img
+                      src="img/caoPelagem.jpg"
+                      class="d-block w-100"
+                      alt="Um cão de pelagem clara sendo cuidadosamente lavado e escovado por um profissional em um ambiente de banho e tosa"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h2 class="h5 fw-bold">Banho e Tosa</h2>
+                      <p class="small d-none d-sm-block">
+                        Serviços completos de beleza para seu pet
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img
+                      src="img/Prateleiras.jpg"
+                      class="d-block w-100"
+                      alt="Prateleiras organizadas com produtos para pets, como rações, brinquedos e acessórios, em uma loja bem iluminada"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                    />
+                    <div class="carousel-caption d-block">
+                      <h2 class="h5 fw-bold">Produtos de Qualidade</h2>
+                      <p class="small d-none d-sm-block">
+                        O melhor para seu companheiro
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Destaques - Explica os diferenciais do PetShop -->
+      <!-- Cada card apresenta um benefício específico com ícone e descrição -->
+      <section class="py-5" aria-labelledby="highlights-title">
+        <div class="container">
+          <div class="container-white">
+            <h2 id="highlights-title" class="text-center mb-5">
+              Nossos <span class="text-primary">Diferenciais</span>
+            </h2>
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="text-center feature-box">
+                  <div class="display-4 text-primary mb-3">
+                    <i class="fas fa-heart" aria-hidden="true"></i>
+                  </div>
+                  <h3>Cuidado Excepcional</h3>
+                  <p>
+                    Tratamento VIP personalizado que respeita as necessidades
+                    únicas e a personalidade do seu pet.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="text-center feature-box">
+                  <div class="display-4 text-primary mb-3">
+                    <i class="fas fa-award" aria-hidden="true"></i>
+                  </div>
+                  <h3>Equipe Especializada</h3>
+                  <p>
+                    Profissionais certificados com expertise e genuína paixão
+                    por criar experiências positivas para cada animal.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="text-center feature-box">
+                  <div class="display-4 text-primary mb-3">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                  </div>
+                  <h3>Conveniência Total</h3>
+                  <p>
+                    Horários flexíveis com atendimento inclusive aos sábados e
+                    sistema de agendamento online simplificado.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Serviços em Destaque -->
+      <!-- Mostra os principais serviços com imagens e descrições em cards -->
+      <!-- A classe 'bg-light' cria um contraste visual com outras seções -->
+      <section class="py-5 bg-light" aria-labelledby="services-title">
+        <div class="container">
+          <h2 id="services-title" class="text-center mb-5 animate-title">
+            Serviços <span class="text-primary">Premium</span>
+          </h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <article class="service-card card h-100">
+                <img
+                  src="img/1BANHO_1.JPG"
+                  class="card-img-top"
+                  alt="Um cachorro feliz, recém-tosado, com laço decorativo, em um ambiente de pet shop"
+                  width="400"
+                  height="300"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h3 class="h5">Banho & Tosa Profissional</h3>
+                  <p class="card-text">
+                    Experiência completa de bem-estar e beleza com produtos
+                    premium e técnicas especializadas.
+                  </p>
+                  <a href="#contato" class="btn btn-primary btn-lg w-100"
+                    >Agendar Agora</a
+                  >
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="service-card card h-100">
+                <img
+                  src="img/2CLNIC_1.JPG"
+                  class="card-img-top"
+                  alt="Um veterinário examinando um gato em uma mesa de atendimento, transmitindo cuidado e profissionalismo"
+                  width="400"
+                  height="300"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h3 class="h5">Veterinária Especializada</h3>
+                  <p class="card-text">
+                    Atendimento clínico preventivo e curativo com equipamentos
+                    modernos e abordagem compassiva.
+                  </p>
+                  <a href="#contato" class="btn btn-primary btn-lg w-100"
+                    >Consultar</a
+                  >
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="service-card card h-100">
+                <img
+                  src="img/ExposicaoDeProdutos.jpg"
+                  class="card-img-top"
+                  alt="Exposição de produtos variados para pets, como camas, brinquedos e rações, em prateleiras coloridas"
+                  width="400"
+                  height="300"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h3 class="h5">Boutique Pet Exclusiva</h3>
+                  <p class="card-text">
+                    Seleção criteriosa de produtos premium para nutrição,
+                    conforto e diversão do seu melhor amigo.
+                  </p>
+                  <a
+                    href="produtos.html"
+                    class="btn btn-primary btn-lg w-100"
+                    role="button"
+                    >Explorar</a
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de Adoção -->
+      <!-- Promove a adoção responsável com imagem e chamada para ação -->
+      <section class="py-5" aria-labelledby="adoption-title">
+        <div class="container">
+          <div class="container-white">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <figure>
+                  <img
+                    src="img/grupoDeCaoes.jpg"
+                    class="img-fluid rounded-3"
+                    alt="Um grupo de cães e gatos de diferentes portes e cores, sentados juntos, esperando por um novo lar"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  />
+                </figure>
+              </div>
+              <div class="col-lg-6 text-center text-lg-start">
+                <h2 id="adoption-title" class="mb-4">
+                  <span class="text-primary">Adote</span> um Amigo
+                </h2>
+                <p class="lead">
+                  Transforme vidas através da adoção responsável. Nossos pets
+                  aguardam com amor para fazerem parte da sua família.
+                </p>
+                <a
+                  href="adocao.html"
+                  class="btn btn-primary btn-lg"
+                  role="button"
+                  >Encontrar Meu Companheiro</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <!-- Dividido em seções com informações de contato, links rápidos e redes sociais -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Grid responsivo que reorganiza as colunas em diferentes tamanhos de tela -->
+        <div class="row gy-4 justify-content-between">
+          <!-- Seção de logo e redes sociais -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-section">
+              <h4 class="footer-title">
+                <i class="fas fa-paw me-2" aria-hidden="true"></i>
+                <span>PetShop Amigo Fiel</span>
+              </h4>
+              <p class="mb-4">
+                Dedicados a proporcionar excelência em cuidados pet desde 2025.
+              </p>
+              <div class="social-links">
+                <a href="#" class="social-link facebook" aria-label="Facebook">
+                  <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link instagram"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-link x-twitter" aria-label="Twitter">
+                  <i class="fab fa-x" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-link whatsapp" aria-label="WhatsApp">
+                  <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Links Rápidos - Navegação facilitada -->
+          <div class="col-6 col-lg-3">
+            <div class="footer-section">
+              <h5 class="footer-title">Links Rápidos</h5>
+              <ul class="footer-links">
+                <li>
+                  <a href="index.html">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="servicos.html">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    <span>Serviços</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="produtos.html">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    <span>Produtos</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="adocao.html">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    <span>Adoção</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Lista de Parceiros -->
+          <div class="col-6 col-lg-3">
+            <div class="footer-section">
+              <h5 class="footer-title">Parceiros</h5>
+              <ul class="footer-partners">
+                <li>
+                  <a
+                    href="https://www.petz.com.br"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-store" aria-hidden="true"></i>
+                    <span>Petz</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.cobasi.com.br"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-store" aria-hidden="true"></i>
+                    <span>Cobasi</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.petlove.com.br"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fas fa-store" aria-hidden="true"></i>
+                    <span>Petlove</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Informações de Contato -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-section">
+              <h5 class="footer-title">Contato</h5>
+              <address class="footer-contact">
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <span>Rua dos Pets, 123<br />Fortaleza - CE</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-phone" aria-hidden="true"></i>
+                    <a href="tel:+5585987175354">(11) 98717-5354</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <a href="mailto:thiagodev@gmail.com">thiagodev@gmail.com</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                    <span>Seg - Sáb: 9h às 19h</span>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="text-center mb-0">
+            &copy; 2025 PetShop Amigo Fiel. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botão voltar ao topo -->
+    <a href="#" class="back-to-top" aria-label="Voltar ao topo da página">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Scripts necessários -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para o botão de voltar ao topo -->
+    <script>
+      // Função para controlar o botão de voltar ao topo
+      document.addEventListener("DOMContentLoaded", function () {
+        const backToTopButton = document.querySelector(".back-to-top");
+
+        // Mostrar ou esconder o botão baseado na posição da página
+        function toggleBackToTopButton() {
+          if (window.scrollY > 300) {
+            backToTopButton.classList.add("show");
+          } else {
+            backToTopButton.classList.remove("show");
+          }
+        }
+
+        // Evento de scroll para mostrar/esconder o botão
+        window.addEventListener("scroll", toggleBackToTopButton);
+
+        // Evento de clique para rolar ao topo
+        backToTopButton.addEventListener("click", function (e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+        // Verificar posição inicial
+        toggleBackToTopButton();
+      });
+    </script>
+  </body>
+</html>

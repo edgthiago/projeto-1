@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Configurações básicas da página de adoção -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Adote um pet e transforme duas vidas - a sua e a dele. Conheça nossos animais disponíveis para adoção."
+    />
+    <title>Adoção - PetShop Amigo Fiel</title>
+    <!-- Bootstrap CSS - Framework para layout responsivo -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome - Biblioteca de ícones vetoriais -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Barra de navegação com menu responsivo -->
+    <!-- Mantém consistência visual com outras páginas -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top"
+        aria-label="Navegação principal"
+      >
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <i class="fas fa-paw me-2" aria-hidden="true"></i>
+            <span class="d-none d-sm-inline">PetShop Amigo Fiel</span>
+            <span class="d-inline d-sm-none">Amigo Fiel</span>
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Alternar navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="fas fa-home me-1" aria-hidden="true"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicos.html">
+                  <i class="fas fa-cut me-1" aria-hidden="true"></i>
+                  <span>Serviços</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="produtos.html">
+                  <i class="fas fa-shopping-bag me-1" aria-hidden="true"></i>
+                  <span>Produtos</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="adocao.html"
+                  aria-current="page"
+                >
+                  <i class="fas fa-heart me-1" aria-hidden="true"></i>
+                  <span>Adoção</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal da página de adoção -->
+    <main class="min-vh-100 pt-5">
+      <!-- Seção de banner com mensagem sobre adoção -->
+      <!-- Destaca a importância da adoção responsável -->
+      <section class="hero-section py-5 bg-primary text-white">
+        <div class="container py-4">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h1 class="display-4 fw-bold mb-4 animate-title">
+                Adote um Amigo
+              </h1>
+              <p class="lead animate-text">
+                Dê uma chance para um pet especial fazer parte da sua família. A
+                adoção responsável muda duas vidas: a sua e a do seu novo amigo.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div
+                id="heroCarousel"
+                class="carousel slide carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner rounded-3 shadow">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                    <img
+                      src="img/Um labrador de pelagem dourada brilhante, com aproximadamente 2 anos, sentado obedientemente em um gramado verde bem cuidado. O cachorro tem expressão amigável com um leve sorriso canino, olhos castanhos aten.jpg"
+                      class="d-block w-100"
+                      alt="Thor, um cachorro labrador dourado de porte médio"
+                      width="800"
+                      height="500"
+                      loading="eager"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="h4 fw-bold mb-0">Thor</h2>
+                      <p class="fs-5 fw-bold text-warning">Labrador dócil</p>
+                      <p class="text-white fst-italic">Ótimo com crianças!</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img
+                      src="img/Uma gata siamesa de pelagem clara com pontas mais escuras nas orelhas, rosto e patas. Ela está confortavelmente deitada em uma almofada macia em tons pastéis. Seus olhos azuis intensos olham diretamente para .jpg"
+                      class="d-block w-100"
+                      alt="Luna, uma gata siamesa de pelagem clara"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="h4 fw-bold mb-0">Luna</h2>
+                      <p class="fs-5 fw-bold text-warning">Gatinha carinhosa</p>
+                      <p class="text-white fst-italic">
+                        Ideal para apartamentos!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img
+                      src="img/Um cachorro vira-lata de porte pequeno com pelagem marrom mesclada, orelhas caídas e focinho curto. Ele está em posição alerta, com aparência amigável e expressa energia e vivacidade. Usa uma bandana colorida.jpg"
+                      class="d-block w-100"
+                      alt="Bob, um cachorro vira-lata de porte pequeno"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="h4 fw-bold mb-0">Bob</h2>
+                      <p class="fs-5 fw-bold text-warning">
+                        Vira-lata amigável
+                      </p>
+                      <p class="text-white fst-italic">Adora passear!</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Processo de Adoção -->
+      <!-- Explica os passos necessários para adotar -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-5">Como Adotar</h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <article class="text-center">
+                <div class="display-4 text-primary mb-3">
+                  <i class="fas fa-search" aria-hidden="true"></i>
+                </div>
+                <h3 class="h5">1. Escolha seu Pet</h3>
+                <p>
+                  Conheça nossos animais disponíveis para adoção e escolha seu
+                  companheiro.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="text-center">
+                <div class="display-4 text-primary mb-3">
+                  <i class="fas fa-clipboard-list" aria-hidden="true"></i>
+                </div>
+                <h3 class="h5">2. Preencha o Formulário</h3>
+                <p>Complete o formulário de adoção com suas informações.</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="text-center">
+                <div class="display-4 text-primary mb-3">
+                  <i class="fas fa-home" aria-hidden="true"></i>
+                </div>
+                <h3 class="h5">3. Avaliação</h3>
+                <p>
+                  Nossa equipe avaliará seu perfil e ambiente para garantir o
+                  bem-estar do pet.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <article class="text-center">
+                <div class="display-4 text-primary mb-3">
+                  <i class="fas fa-heart" aria-hidden="true"></i>
+                </div>
+                <h3 class="h5">4. Adoção Concluída</h3>
+                <p>
+                  Após aprovação, você poderá levar seu novo amigo para casa.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pets Disponíveis -->
+      <!-- Lista de pets disponíveis para adoção -->
+      <!-- Cards com informações e fotos dos animais -->
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Pets Disponíveis para Adoção</h2>
+          <div class="row g-4">
+            <!-- Pet 1 -->
+            <article class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 position-relative">
+                <div class="position-absolute top-0 end-0 m-2">
+                  <span class="badge bg-primary rounded-pill px-3 py-2">
+                    <i class="fas fa-dog me-1"></i> Cachorro
+                  </span>
+                </div>
+                <figure class="m-0">
+                  <img
+                    src="img/Um labrador de pelagem dourada brilhante, com aproximadamente 2 anos, sentado obedientemente em um gramado verde bem cuidado. O cachorro tem expressão amigável com um leve sorriso canino, olhos castanhos aten.jpg"
+                    class="card-img-top"
+                    alt="Thor, um cachorro labrador dourado de porte médio, sorrindo para a câmera"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h3 class="h4 card-title">Thor</h3>
+                  <dl class="row mb-3">
+                    <dt class="col-sm-4">Idade:</dt>
+                    <dd class="col-sm-8">2 anos</dd>
+                    <dt class="col-sm-4">Porte:</dt>
+                    <dd class="col-sm-8">Médio</dd>
+                    <dt class="col-sm-4">Sexo:</dt>
+                    <dd class="col-sm-8">Macho</dd>
+                  </dl>
+                  <p class="card-text">
+                    Thor é um cachorro dócil e brincalhão, ótimo com crianças e
+                    outros animais.
+                  </p>
+                  <a
+                    href="#formulario-adocao"
+                    class="btn btn-primary btn-lg w-100"
+                  >
+                    Quero Adotar
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Pet 2 -->
+            <article class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 position-relative">
+                <div class="position-absolute top-0 end-0 m-2">
+                  <span
+                    class="badge bg-warning rounded-pill px-3 py-2 text-dark"
+                  >
+                    <i class="fas fa-cat me-1"></i> Gato
+                  </span>
+                </div>
+                <figure class="m-0">
+                  <img
+                    src="img/Uma gata siamesa de pelagem clara com pontas mais escuras nas orelhas, rosto e patas. Ela está confortavelmente deitada em uma almofada macia em tons pastéis. Seus olhos azuis intensos olham diretamente para .jpg"
+                    class="card-img-top"
+                    alt="Luna, uma gata siamesa de pelagem clara, deitada confortavelmente"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h3 class="h4 card-title">Luna</h3>
+                  <dl class="row mb-3">
+                    <dt class="col-sm-4">Idade:</dt>
+                    <dd class="col-sm-8">1 ano</dd>
+                    <dt class="col-sm-4">Porte:</dt>
+                    <dd class="col-sm-8">Pequeno</dd>
+                    <dt class="col-sm-4">Sexo:</dt>
+                    <dd class="col-sm-8">Fêmea</dd>
+                  </dl>
+                  <p class="card-text">
+                    Luna é uma gatinha carinhosa e tranquila, ideal para
+                    apartamentos.
+                  </p>
+                  <a
+                    href="#formulario-adocao"
+                    class="btn btn-primary btn-lg w-100"
+                  >
+                    Quero Adotar
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Pet 3 -->
+            <article class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 position-relative">
+                <div class="position-absolute top-0 end-0 m-2">
+                  <span class="badge bg-primary rounded-pill px-3 py-2">
+                    <i class="fas fa-dog me-1"></i> Cachorro
+                  </span>
+                </div>
+                <figure class="m-0">
+                  <img
+                    src="img/Um cachorro vira-lata de porte pequeno com pelagem marrom mesclada, orelhas caídas e focinho curto. Ele está em posição alerta, com aparência amigável e expressa energia e vivacidade. Usa uma bandana colorida.jpg"
+                    class="card-img-top"
+                    alt="Bob, um cachorro vira-lata de porte pequeno com pelagem marrom"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h3 class="h4 card-title">Bob</h3>
+                  <dl class="row mb-3">
+                    <dt class="col-sm-4">Idade:</dt>
+                    <dd class="col-sm-8">3 anos</dd>
+                    <dt class="col-sm-4">Porte:</dt>
+                    <dd class="col-sm-8">Pequeno</dd>
+                    <dt class="col-sm-4">Sexo:</dt>
+                    <dd class="col-sm-8">Macho</dd>
+                  </dl>
+                  <p class="card-text">
+                    Bob é um cãozinho alegre e companheiro, adora passear e
+                    brincar.
+                  </p>
+                  <a
+                    href="#formulario-adocao"
+                    class="btn btn-primary btn-lg w-100"
+                  >
+                    Quero Adotar
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Pet 4 (Novo) -->
+            <article class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 position-relative">
+                <div class="position-absolute top-0 end-0 m-2">
+                  <span
+                    class="badge bg-warning rounded-pill px-3 py-2 text-dark"
+                  >
+                    <i class="fas fa-cat me-1"></i> Gato
+                  </span>
+                </div>
+                <figure class="m-0">
+                  <img
+                    src="img/Uma gata persa de pelagem completamente branca e fofa, com olhos azul-safira brilhantes. Ela está sentada elegantemente sobre uma superfície macia em tons claros. A postura é calma e majestosa, típica dos per.jpg"
+                    class="card-img-top"
+                    alt="Mia, uma gata persa de pelagem branca e olhos azuis"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h3 class="h4 card-title">Mia</h3>
+                  <dl class="row mb-3">
+                    <dt class="col-sm-4">Idade:</dt>
+                    <dd class="col-sm-8">2 anos</dd>
+                    <dt class="col-sm-4">Porte:</dt>
+                    <dd class="col-sm-8">Médio</dd>
+                    <dt class="col-sm-4">Sexo:</dt>
+                    <dd class="col-sm-8">Fêmea</dd>
+                  </dl>
+                  <p class="card-text">
+                    Mia é uma gata persa muito elegante e carinhosa. Gosta de
+                    ambientes tranquilos e colo.
+                  </p>
+                  <a
+                    href="#formulario-adocao"
+                    class="btn btn-primary btn-lg w-100"
+                  >
+                    Quero Adotar
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Pet 5 (Novo) -->
+            <article class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 position-relative">
+                <div class="position-absolute top-0 end-0 m-2">
+                  <span class="badge bg-primary rounded-pill px-3 py-2">
+                    <i class="fas fa-dog me-1"></i> Cachorro
+                  </span>
+                </div>
+                <figure class="m-0">
+                  <img
+                    src="img/Um cachorro golden retriever de pelagem dourada brilhante, com aproximadamente 4 anos. Ele está sentado obedientemente em um tapete dentro de casa, com expressão amigável e olhar inteligente. Sua língua está .jpg"
+                    class="card-img-top"
+                    alt="Max, um cachorro golden retriever de pelagem dourada"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h3 class="h4 card-title">Max</h3>
+                  <dl class="row mb-3">
+                    <dt class="col-sm-4">Idade:</dt>
+                    <dd class="col-sm-8">4 anos</dd>
+                    <dt class="col-sm-4">Porte:</dt>
+                    <dd class="col-sm-8">Grande</dd>
+                    <dt class="col-sm-4">Sexo:</dt>
+                    <dd class="col-sm-8">Macho</dd>
+                  </dl>
+                  <p class="card-text">
+                    Max é um golden retriever extremamente dócil e treinado.
+                    Ótimo com crianças e ideal para famílias.
+                  </p>
+                  <a
+                    href="#formulario-adocao"
+                    class="btn btn-primary btn-lg w-100"
+                  >
+                    Quero Adotar
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Pet 6 (Novo) -->
+            <article class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 position-relative">
+                <div class="position-absolute top-0 end-0 m-2">
+                  <span
+                    class="badge bg-warning rounded-pill px-3 py-2 text-dark"
+                  >
+                    <i class="fas fa-cat me-1"></i> Gato
+                  </span>
+                </div>
+                <figure class="m-0">
+                  <img
+                    src="img/cachorroFeliz.jpg"
+                    class="card-img-top"
+                    alt="Nina, uma gata filhote de pelagem tigrada"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h3 class="h4 card-title">Nina</h3>
+                  <dl class="row mb-3">
+                    <dt class="col-sm-4">Idade:</dt>
+                    <dd class="col-sm-8">6 meses</dd>
+                    <dt class="col-sm-4">Porte:</dt>
+                    <dd class="col-sm-8">Pequeno</dd>
+                    <dt class="col-sm-4">Sexo:</dt>
+                    <dd class="col-sm-8">Fêmea</dd>
+                  </dl>
+                  <p class="card-text">
+                    Nina é uma filhote muito brincalhona e sociável. Já está
+                    vacinada e vermifugada.
+                  </p>
+                  <a
+                    href="#formulario-adocao"
+                    class="btn btn-primary btn-lg w-100"
+                  >
+                    Quero Adotar
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Pet 7 (Novo) -->
+            <article class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 position-relative">
+                <div class="position-absolute top-0 end-0 m-2">
+                  <span class="badge bg-primary rounded-pill px-3 py-2">
+                    <i class="fas fa-dog me-1"></i> Cachorro
+                  </span>
+                </div>
+                <figure class="m-0">
+                  <img
+                    src="img/caoPelagem.jpg"
+                    class="card-img-top"
+                    alt="Toby, um cachorro schnauzer de pelagem cinza"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h3 class="h4 card-title">Toby</h3>
+                  <dl class="row mb-3">
+                    <dt class="col-sm-4">Idade:</dt>
+                    <dd class="col-sm-8">5 anos</dd>
+                    <dt class="col-sm-4">Porte:</dt>
+                    <dd class="col-sm-8">Médio</dd>
+                    <dt class="col-sm-4">Sexo:</dt>
+                    <dd class="col-sm-8">Macho</dd>
+                  </dl>
+                  <p class="card-text">
+                    Toby é um schnauzer muito inteligente e leal. Ideal como cão
+                    de companhia para todos os tipos de família.
+                  </p>
+                  <a
+                    href="#formulario-adocao"
+                    class="btn btn-primary btn-lg w-100"
+                  >
+                    Quero Adotar
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Pet 8 (Novo) -->
+            <article class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 position-relative">
+                <div class="position-absolute top-0 end-0 m-2">
+                  <span
+                    class="badge bg-warning rounded-pill px-3 py-2 text-dark"
+                  >
+                    <i class="fas fa-cat me-1"></i> Gato
+                  </span>
+                </div>
+                <figure class="m-0">
+                  <img
+                    src="img/Um gato preto com manchas brancas no peito e patas, de porte médio e aproximadamente 3 anos. Ele está confortavelmente acomodado em uma janela ensolarada, com a luz criando um contraste bonito com sua pelagem.jpg"
+                    class="card-img-top"
+                    alt="Felix, um gato preto com manchas brancas"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h3 class="h4 card-title">Felix</h3>
+                  <dl class="row mb-3">
+                    <dt class="col-sm-4">Idade:</dt>
+                    <dd class="col-sm-8">3 anos</dd>
+                    <dt class="col-sm-4">Porte:</dt>
+                    <dd class="col-sm-8">Médio</dd>
+                    <dt class="col-sm-4">Sexo:</dt>
+                    <dd class="col-sm-8">Macho</dd>
+                  </dl>
+                  <p class="card-text">
+                    Felix é um gato preto muito carinhoso e sociável. Está
+                    castrado, vacinado e acostumado com caixinha de areia.
+                  </p>
+                  <a
+                    href="#formulario-adocao"
+                    class="btn btn-primary btn-lg w-100"
+                  >
+                    Quero Adotar
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Pet 9 (Novo) -->
+            <article class="col-md-6 col-lg-4 mb-4">
+              <div class="card h-100 position-relative">
+                <div class="position-absolute top-0 end-0 m-2">
+                  <span class="badge bg-primary rounded-pill px-3 py-2">
+                    <i class="fas fa-dog me-1"></i> Cachorro
+                  </span>
+                </div>
+                <figure class="m-0">
+                  <img
+                    src="img/Uma cachorrinha vira-lata de porte pequeno com pelagem lisa em tom caramelo dourado uniforme. Ela está sentada com a cabeça ligeiramente inclinada em expressão doce e curiosa. Seus olhos são grandes e express.jpg"
+                    class="card-img-top"
+                    alt="Mel, uma cachorra vira-lata de pelagem caramelo"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h3 class="h4 card-title">Mel</h3>
+                  <dl class="row mb-3">
+                    <dt class="col-sm-4">Idade:</dt>
+                    <dd class="col-sm-8">2 anos</dd>
+                    <dt class="col-sm-4">Porte:</dt>
+                    <dd class="col-sm-8">Pequeno</dd>
+                    <dt class="col-sm-4">Sexo:</dt>
+                    <dd class="col-sm-8">Fêmea</dd>
+                  </dl>
+                  <p class="card-text">
+                    Mel é uma cachorrinha vira-lata de pelagem caramelo, muito
+                    dócil e brincalhona. Ótima para apartamentos.
+                  </p>
+                  <a
+                    href="#formulario-adocao"
+                    class="btn btn-primary btn-lg w-100"
+                  >
+                    Quero Adotar
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formulário de Adoção -->
+      <section class="py-5 bg-light" id="formulario-adocao">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="container-white">
+                <h2 class="text-center mb-4">Formulário de Adoção</h2>
+                <p class="text-center mb-4">
+                  Preencha o formulário abaixo para iniciar o processo de adoção
+                  de um dos nossos queridos amigos.
+                </p>
+
+                <form id="adocaoFormFixo" class="needs-validation" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6 mb-3">
+                      <label for="nomeCompleto" class="form-label"
+                        >Nome completo*</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nomeCompleto"
+                        placeholder="Seu nome completo"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Por favor, informe seu nome completo.
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <label for="telefoneContato" class="form-label"
+                        >Telefone*</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="telefoneContato"
+                        placeholder="(00) 00000-0000"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Por favor, informe um telefone válido.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="emailContato" class="form-label">E-mail*</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailContato"
+                      placeholder="seu@email.com"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Por favor, informe um e-mail válido.
+                    </div>
+                  </div>
+
+                  <div class="row g-3">
+                    <div class="col-md-6 mb-3">
+                      <label for="petInteresse" class="form-label"
+                        >Pet de interesse*</label
+                      >
+                      <select class="form-select" id="petInteresse" required>
+                        <option value="" selected disabled>
+                          Selecione um pet
+                        </option>
+                        <option value="Thor">Thor (Cachorro)</option>
+                        <option value="Luna">Luna (Gato)</option>
+                        <option value="Bob">Bob (Cachorro)</option>
+                        <option value="Mia">Mia (Gato)</option>
+                        <option value="Max">Max (Cachorro)</option>
+                        <option value="Nina">Nina (Gato)</option>
+                        <option value="Toby">Toby (Cachorro)</option>
+                        <option value="Felix">Felix (Gato)</option>
+                        <option value="Mel">Mel (Cachorro)</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Por favor, selecione um pet.
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                      <label for="tipoMoradia" class="form-label"
+                        >Tipo de moradia*</label
+                      >
+                      <select class="form-select" id="tipoMoradia" required>
+                        <option value="" selected disabled>
+                          Selecione o tipo
+                        </option>
+                        <option value="Casa">Casa</option>
+                        <option value="Apartamento">Apartamento</option>
+                        <option value="Casa com quintal">
+                          Casa com quintal
+                        </option>
+                        <option value="Sítio/Chácara">Sítio/Chácara</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Por favor, selecione o tipo de moradia.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="mensagemAdocao" class="form-label"
+                      >Por que você quer adotar este pet?</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="mensagemAdocao"
+                      rows="4"
+                      placeholder="Conte-nos um pouco sobre você, sua família e por que deseja adotar este amigo."
+                    ></textarea>
+                  </div>
+
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="concordoTermos"
+                      required
+                    />
+                    <label class="form-check-label" for="concordoTermos"
+                      >Declaro que li e concordo com os
+                      <a href="#">termos de adoção responsável</a> e estou
+                      ciente das responsabilidades envolvidas.*</label
+                    >
+                    <div class="invalid-feedback">
+                      Você precisa concordar com os termos antes de prosseguir.
+                    </div>
+                  </div>
+
+                  <div class="d-grid gap-2 col-md-6 mx-auto mt-4">
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-lg"
+                      id="enviarAdocaoFixo"
+                    >
+                      Enviar Solicitação
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal Sucesso para formulário fixo -->
+      <div
+        class="modal fade"
+        id="sucessoAdocaoFixoModal"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Solicitação Enviada!</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Fechar"
+              ></button>
+            </div>
+            <div class="modal-body text-center">
+              <i
+                class="fa-solid fa-circle-check text-success"
+                style="font-size: 4rem; margin-bottom: 1rem"
+              ></i>
+              <p>Sua solicitação de adoção foi enviada com sucesso!</p>
+              <p>
+                Entraremos em contato em breve para dar continuidade ao
+                processo.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                data-bs-dismiss="modal"
+              >
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Botão voltar ao topo -->
+    <a href="#" class="back-to-top" aria-label="Voltar ao topo da página">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Rodapé da página -->
+    <!-- Mantém consistência com outras páginas -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-section">
+              <h4 class="footer-title">
+                <i class="fas fa-paw me-2"></i>
+                <span>PetShop Amigo Fiel</span>
+              </h4>
+              <p class="mb-4">
+                Cuidando do seu melhor amigo com amor e dedicação desde 2025.
+              </p>
+              <div class="social-links">
+                <a href="#" class="social-link facebook" aria-label="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="#"
+                  class="social-link instagram"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link x-twitter" aria-label="Twitter">
+                  <i class="fab fa-x"></i>
+                </a>
+                <a href="#" class="social-link whatsapp" aria-label="WhatsApp">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="footer-section">
+              <h5 class="footer-title">Links Rápidos</h5>
+              <ul class="footer-links">
+                <li>
+                  <a href="index.html">
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="servicos.html">
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Serviços</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="produtos.html">
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Produtos</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="adocao.html">
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Adoção</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="footer-section">
+              <h5 class="footer-title">Parceiros</h5>
+              <ul class="footer-partners">
+                <li>
+                  <a
+                    href="https://www.petz.com.br"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fas fa-store"></i>
+                    <span>Petz</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.cobasi.com.br"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fas fa-store"></i>
+                    <span>Cobasi</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.petlove.com.br"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <i class="fas fa-store"></i>
+                    <span>Petlove</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="footer-section">
+              <h5 class="footer-title">Contato</h5>
+              <address class="footer-contact">
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Rua dos Pets, 123<br />São Paulo - SP</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+551199999999">(11) 99999-9999</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:contato@amigofiel.com.br"
+                      >contato@amigofiel.com.br</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-clock"></i>
+                    <span>Seg - Sáb: 9h às 19h</span>
+                  </li>
+                </ul>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="text-center mb-0">
+            &copy; 2025 PetShop Amigo Fiel. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts necessários -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para o botão de voltar ao topo -->
+    <script>
+      // Função para controlar o botão de voltar ao topo
+      document.addEventListener("DOMContentLoaded", function () {
+        const backToTopButton = document.querySelector(".back-to-top");
+
+        // Mostrar ou esconder o botão baseado na posição da página
+        function toggleBackToTopButton() {
+          if (window.scrollY > 300) {
+            backToTopButton.classList.add("show");
+          } else {
+            backToTopButton.classList.remove("show");
+          }
+        }
+
+        // Evento de scroll para mostrar/esconder o botão
+        window.addEventListener("scroll", toggleBackToTopButton);
+
+        // Evento de clique para rolar ao topo
+        backToTopButton.addEventListener("click", function (e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+        // Verificar posição inicial
+        toggleBackToTopButton();
+      });
+
+      // Script para filtrar os animais
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll("[data-filter]");
+        const petItems = document.querySelectorAll(".pet-item");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const filterValue = this.getAttribute("data-filter");
+
+            // Remover classe active de todos os botões
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+
+            // Adicionar classe active ao botão clicado
+            this.classList.add("active");
+
+            // Filtrar os cards de animais
+            petItems.forEach((item) => {
+              if (
+                filterValue === "all" ||
+                item.classList.contains(filterValue)
+              ) {
+                item.style.display = "block";
+                setTimeout(() => {
+                  item.style.opacity = "1";
+                  item.style.transform = "scale(1)";
+                }, 50);
+              } else {
+                item.style.opacity = "0";
+                item.style.transform = "scale(0.8)";
+                setTimeout(() => {
+                  item.style.display = "none";
+                }, 300);
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

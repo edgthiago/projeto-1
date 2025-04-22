@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Configurações básicas da página de serviços -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Serviços especializados de banho e tosa, veterinária e daycare com profissionais certificados para seu pet"
+    />
+    <title>Serviços Premium - PetShop Amigo Fiel</title>
+    <!-- Bootstrap CSS - Framework para layout responsivo -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome - Biblioteca de ícones vetoriais -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Barra de navegação -->
+    <!-- Menu responsivo com links para todas as seções do site -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top"
+        aria-label="Navegação principal"
+      >
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <i class="fas fa-paw me-2" aria-hidden="true"></i>
+            <span class="d-none d-sm-inline">PetShop Amigo Fiel</span>
+            <span class="d-inline d-sm-none">Amigo Fiel</span>
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Alternar navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="fas fa-home me-1" aria-hidden="true"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="servicos.html"
+                  aria-current="page"
+                >
+                  <i class="fas fa-cut me-1" aria-hidden="true"></i>
+                  <span>Serviços</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="produtos.html">
+                  <i class="fas fa-shopping-bag me-1" aria-hidden="true"></i>
+                  <span>Produtos</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="adocao.html">
+                  <i class="fas fa-heart me-1" aria-hidden="true"></i>
+                  <span>Adoção</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="min-vh-100 pt-5">
+      <!-- Banner da página de serviços -->
+      <!-- Apresenta os serviços principais com imagem e texto -->
+      <section class="py-5 bg-primary text-white">
+        <div class="container pt-4">
+          <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start hero-text">
+              <h1 class="display-4 fw-bold mb-4 animate-title">
+                Serviços <span class="highlight-text">Premium</span>
+              </h1>
+              <p class="lead animate-text">
+                Experiências especializadas para o bem-estar e felicidade do seu
+                pet
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div
+                id="heroCarousel"
+                class="carousel slide carousel-fade"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner rounded-3 shadow">
+                  <div class="carousel-item active" data-bs-interval="5000">
+                    <img
+                      src="img/1BANHO_1.JPG"
+                      class="d-block w-100"
+                      alt="Cachorro após banho e tosa, exibindo pelagem bem cuidada"
+                      width="800"
+                      height="500"
+                      loading="eager"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="h4 fw-bold mb-0">Banho & Tosa Premium</h2>
+                      <p class="fs-5 fw-bold text-warning">20% de desconto!</p>
+                      <p class="text-white fst-italic">
+                        Nas segundas e terças-feiras
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img
+                      src="img/2CLNIC_1.JPG"
+                      class="d-block w-100"
+                      alt="Veterinário realizando exame em um gato"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="h4 fw-bold mb-0">Consulta Veterinária</h2>
+                      <p class="fs-5 fw-bold text-warning">15% de desconto!</p>
+                      <p class="text-white fst-italic">Na primeira consulta</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img
+                      src="img/3DAYCA_1.JPG"
+                      class="d-block w-100"
+                      alt="Grupo de cães brincando em área supervisionada"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class="h4 fw-bold mb-0">Day Care Exclusivo</h2>
+                      <p class="fs-5 fw-bold text-warning">25% de desconto!</p>
+                      <p class="text-white fst-italic">No pacote mensal</p>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lista de serviços oferecidos -->
+      <!-- Cada serviço é apresentado em um card com descrição detalhada -->
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Banho e Tosa -->
+            <article class="col-md-6 col-lg-4">
+              <div class="card h-100 service-card">
+                <figure class="m-0">
+                  <img
+                    src="img/1BANHO_1.JPG"
+                    class="card-img-top"
+                    alt="Cachorro após banho e tosa, exibindo pelagem bem cuidada"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="h4 card-title">Banho & Tosa Profissional</h2>
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Produtos
+                      especiais para cada tipo de pelagem
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Tosa
+                      higiênica e estética personalizada
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Hidratação
+                      profunda com óleos essenciais
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Higiene
+                      bucal completa
+                    </li>
+                  </ul>
+                  <button class="btn btn-primary btn-lg w-100">
+                    Agendar Sessão
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Veterinário -->
+            <article class="col-md-6 col-lg-4">
+              <div class="card h-100 service-card">
+                <figure class="m-0">
+                  <img
+                    src="img/2CLNIC_1.JPG"
+                    class="card-img-top"
+                    alt="Veterinário realizando exame em um gato"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="h4 card-title">Clínica Veterinária</h2>
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Consultas
+                      preventivas e emergenciais
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Programa
+                      completo de vacinação
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Diagnósticos
+                      laboratoriais avançados
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i
+                      >Procedimentos cirúrgicos modernos
+                    </li>
+                  </ul>
+                  <button class="btn btn-primary btn-lg w-100">
+                    Marcar Consulta
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Day Care -->
+            <article class="col-md-6 col-lg-4">
+              <div class="card h-100 service-card">
+                <figure class="m-0">
+                  <img
+                    src="img/3DAYCA_1.JPG"
+                    class="card-img-top"
+                    alt="Grupo de cães brincando em área supervisionada"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="h4 card-title">Day Care Exclusivo</h2>
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Supervisão
+                      contínua por especialistas
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Atividades
+                      lúdicas e estimulantes
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Socialização
+                      segura entre pets compatíveis
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Relatório
+                      diário de atividades
+                    </li>
+                  </ul>
+                  <button class="btn btn-primary btn-lg w-100">
+                    Reservar Vaga
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Adestramento -->
+            <article class="col-md-6 col-lg-4">
+              <div class="card h-100 service-card">
+                <figure class="m-0">
+                  <img
+                    src="img/4ADEST_1.JPG"
+                    class="card-img-top"
+                    alt="Adestrador profissional treinando um cachorro"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="h4 card-title">Adestramento Profissional</h2>
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Técnicas
+                      positivas e humanizadas
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Treinamento
+                      personalizado
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Correção de
+                      comportamentos
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Orientação
+                      aos tutores
+                    </li>
+                  </ul>
+                  <button class="btn btn-primary btn-lg w-100">
+                    Agendar Avaliação
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Spa Pet -->
+            <article class="col-md-6 col-lg-4">
+              <div class="card h-100 service-card">
+                <figure class="m-0">
+                  <img
+                    src="img/5CAMAC_1.JPG"
+                    class="card-img-top"
+                    alt="Pet recebendo massagem relaxante"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="h4 card-title">Spa Pet</h2>
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Massagem
+                      relaxante
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Hidratação
+                      profunda
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Aromaterapia
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Banhos
+                      terapêuticos
+                    </li>
+                  </ul>
+                  <button class="btn btn-primary btn-lg w-100">
+                    Agendar Spa
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Hotel Pet -->
+            <article class="col-md-6 col-lg-4">
+              <div class="card h-100 service-card">
+                <figure class="m-0">
+                  <img
+                    src="img/6HOTEL_1.JPG"
+                    class="card-img-top"
+                    alt="Área de hospedagem para pets"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="h4 card-title">Hotel Pet</h2>
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Acomodações
+                      confortáveis
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i
+                      >Monitoramento 24h
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Atividades
+                      recreativas
+                    </li>
+                    <li>
+                      <i class="fas fa-check text-success me-2"></i>Alimentação
+                      personalizada
+                    </li>
+                  </ul>
+                  <button class="btn btn-primary btn-lg w-100">
+                    Reservar Estadia
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de depoimentos -->
+      <!-- Comentários de clientes satisfeitos -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-5">
+            O que nossos <span class="text-primary">clientes</span> dizem
+          </h2>
+          <div class="row g-4">
+            <!-- Depoimento 1 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 testimonial-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="text-primary me-2">
+                      <i class="fas fa-quote-left display-6"></i>
+                    </div>
+                    <div class="text-warning">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="card-text">
+                    Meu cãozinho sempre volta feliz e perfumado. A equipe é
+                    carinhosa e atenciosa. Nunca vi meu pet tão bem cuidado!
+                  </p>
+                  <div class="d-flex align-items-center mt-3">
+                    <div>
+                      <h3 class="h6 mb-0">Ana Paula</h3>
+                      <small class="text-muted">Tutora de Thor</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Depoimento 2 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 testimonial-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="text-primary me-2">
+                      <i class="fas fa-quote-left display-6"></i>
+                    </div>
+                    <div class="text-warning">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <p class="card-text">
+                    A veterinária diagnosticou rapidamente o problema da minha
+                    gata e o tratamento foi perfeito. Profissionalismo exemplar!
+                  </p>
+                  <div class="d-flex align-items-center mt-3">
+                    <div>
+                      <h3 class="h6 mb-0">Carlos Eduardo</h3>
+                      <small class="text-muted">Tutor de Luna</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Depoimento 3 -->
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 testimonial-card">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="text-primary me-2">
+                      <i class="fas fa-quote-left display-6"></i>
+                    </div>
+                    <div class="text-warning">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </div>
+                  <p class="card-text">
+                    O Day Care é fantástico! Meu cachorro adora ir e volta super
+                    sociável. Recomendo para quem não pode ficar o dia todo com
+                    o pet.
+                  </p>
+                  <div class="d-flex align-items-center mt-3">
+                    <div>
+                      <h3 class="h6 mb-0">Marina Silva</h3>
+                      <small class="text-muted">Tutora de Max</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de perguntas frequentes -->
+      <section class="py-5">
+        <div class="container">
+          <div class="container-white">
+            <h2 class="text-center mb-5">
+              Perguntas <span class="text-primary">Frequentes</span>
+            </h2>
+
+            <div class="accordion" id="faqAccordion">
+              <!-- Pergunta 1 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Quais raças são atendidas no Amigo Fiel?
+                  </button>
+                </h3>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Atendemos todas as raças e portes de cães e gatos, com
+                    serviços adaptados às necessidades específicas de cada
+                    animal. Nossa equipe possui treinamento especializado para
+                    lidar com as particularidades de cada raça.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pergunta 2 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Qual o horário de funcionamento do pet shop?
+                  </button>
+                </h3>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Funcionamos de segunda a sexta-feira das 8h às 19h e aos
+                    sábados das 9h às 16h. Para serviços veterinários
+                    emergenciais, contamos com plantão 24h mediante contato
+                    telefônico prévio.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pergunta 3 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    É necessário agendar os serviços com antecedência?
+                  </button>
+                </h3>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Recomendamos o agendamento prévio para garantir
+                    disponibilidade, especialmente para banho e tosa e consultas
+                    veterinárias. O agendamento pode ser feito pelo site, por
+                    telefone ou pessoalmente, com até 24h de antecedência.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Botão voltar ao topo -->
+    <a href="#" class="back-to-top" aria-label="Voltar ao topo da página">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Rodapé da página -->
+    <footer class="footer">
+      <!-- Conteúdo do footer -->
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-12 col-md-4">
+            <div class="footer-section">
+              <h4 class="footer-title">
+                <i class="fas fa-paw me-2"></i>
+                PetShop Amigo Fiel
+              </h4>
+              <p>
+                Dedicados a proporcionar excelência em cuidados pet desde 2025.
+              </p>
+              <div class="social-links">
+                <a href="#" class="social-link facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="social-link instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-link x-twitter"
+                  ><i class="fab fa-x"></i
+                ></a>
+                <a href="#" class="social-link whatsapp"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="footer-section">
+              <h4 class="footer-title">Contato</h4>
+              <ul class="footer-contact">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i> Av. das Pets, 123 -
+                  Centro
+                </li>
+                <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <a href="mailto:contato@amigofiel.com.br"
+                    >contato@amigofiel.com.br</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="footer-section">
+              <h4 class="footer-title">Horários</h4>
+              <ul class="footer-links">
+                <li><i class="fas fa-clock"></i> Segunda a Sexta: 8h às 19h</li>
+                <li><i class="fas fa-clock"></i> Sábado: 9h às 16h</li>
+                <li><i class="fas fa-clock"></i> Domingo: Fechado</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 PetShop Amigo Fiel. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts necessários -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para o botão de voltar ao topo -->
+    <script>
+      // Função para controlar o botão de voltar ao topo
+      document.addEventListener("DOMContentLoaded", function () {
+        const backToTopButton = document.querySelector(".back-to-top");
+
+        // Mostrar ou esconder o botão baseado na posição da página
+        function toggleBackToTopButton() {
+          if (window.scrollY > 300) {
+            backToTopButton.classList.add("show");
+          } else {
+            backToTopButton.classList.remove("show");
+          }
+        }
+
+        // Evento de scroll para mostrar/esconder o botão
+        window.addEventListener("scroll", toggleBackToTopButton);
+
+        // Evento de clique para rolar ao topo
+        backToTopButton.addEventListener("click", function (e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+
+        // Verificar posição inicial
+        toggleBackToTopButton();
+      });
+    </script>
+  </body>
+</html>
